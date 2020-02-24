@@ -65,4 +65,4 @@ def index(request):
 			
 	serializer = TeamSerializer(matchlist, many=True) # serializing the data
 
-	return JsonResponse(serializer.data, safe = False) # sending the Json response
+	return JsonResponse(serializer.data, safe = False, status = 200) # sending the Json response
